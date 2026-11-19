@@ -1,0 +1,23 @@
+{
+  "name": "herdr-resume",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "bun scripts/typecheck.ts",
+    "test": "bun test",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint --deny-warnings",
+    "knip": "knip"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "knip": "^6.45.1",
+    "lefthook": "^2.2.2",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "typescript": "^7.0.2"
+  },
+  "packageManager": "bun@1.4.4"
+}

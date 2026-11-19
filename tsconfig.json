@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    "types": ["bun"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "paths": {
+      "herdr": ["./node_modules/.cache/herdr-resume/herdr.d.ts"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "mod/**/*.ts",
+    "pi-extension/**/*.ts",
+    "scripts/**/*.ts",
+    "node_modules/.cache/herdr-resume/gpui-kit.d.ts"
+  ]
+}
