@@ -99,12 +99,12 @@ describe("selectCandidates", () => {
   });
 
   test("uses each machine's own boot time", () => {
-    const remote = term({ address: "strix/t12" });
+    const remote = term({ address: "vps/t12" });
     const { resume, skipped } = selectCandidates(
       [remote],
       new Map([
         [undefined, 5_000],
-        ["strix", 500],
+        ["vps", 500],
       ]),
       opts,
     );
@@ -130,7 +130,7 @@ describe("helpers", () => {
 
   test("machineOf", () => {
     expect(machineOf("t1")).toBeUndefined();
-    expect(machineOf("strix/t12")).toBe("strix");
+    expect(machineOf("vps/t12")).toBe("vps");
   });
 
   test("parseBoot", () => {

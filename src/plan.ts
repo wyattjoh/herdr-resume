@@ -46,7 +46,7 @@ export function isBareShell(foreground: TerminalView["foreground"]): boolean {
 }
 
 /**
- * The machine part of a terminal address (`strix/t12` → `strix`).
+ * The machine part of a terminal address (`vps/t12` → `vps`).
  *
  * @param address - A terminal address.
  * @returns The machine name, or undefined for this computer.
